@@ -1,0 +1,10 @@
+body {
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  cursor: none;
+}
+
+img {
+  width: 60px;
+}
