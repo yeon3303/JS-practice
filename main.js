@@ -1,10 +1,16 @@
+const lineX = document.querySelector('.lineX');
+const lineY = document.querySelector('.lineY');
 const target = document.querySelector('.target');
-const img = document.querySelector('.img');
-const xy = document.querySelector('.xy');
+const xyCoord = document.querySelector('.xyCoord');
 
-document.addEventListener('mousemove', (e) => {
-  xy.innerText = `${e.clientX}, ${e.clientY}`;
-  target.style.position = "absolute";
-  target.style.left = e.clientX + -30 + 'px';
-  target.style.top = e.clientY + -30 + 'px';
-});
+document.addEventListener('mouseover', (e) => {
+  const x = e.clientX;
+  const y = e.clientY;
+  lineX.style.top = `${y}px`;
+  lineY.style.left = `${x}px`;
+  target.style.top = `${y}px`;
+  target.style.left = `${x}px`;
+  xyCoord.style.top = `${y}px`;
+  xyCoord.style.left = `${x}px`;
+  xyCoord.innerHTML = `${x}px, ${y}px`
+})

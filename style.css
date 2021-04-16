@@ -1,10 +1,36 @@
 body {
   background-color: black;
-  color: white;
   overflow: hidden;
-  cursor: none;
 }
 
-img {
-  width: 60px;
+.lineX {
+  position: absolute;
+  background-color: blanchedalmond;
+  width: 100%;
+  height: 1px;
+  top: 50%;
+}
+
+.lineY {
+  position: absolute;
+  background-color: blanchedalmond;
+  width: 1px;
+  height: 100%;
+  left: 50%;
+}
+
+.target {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.xyCoord {
+  color: blanchedalmond;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(20px, 20px);
+  font-size: 1.2rem;
 }
